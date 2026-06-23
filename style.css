@@ -1,13 +1,15 @@
-/* ------------------------------
-   GLOBAL RESET + VARIABLES
---------------------------------*/
+/* Variables from Style Guide*/
 :root {
-  --green: hsl(136, 65%, 51%);
-  --cyan: hsl(192, 70%, 51%);
-  --dark: hsl(233, 26%, 24%);
-  --gray: hsl(233, 8%, 62%);
-  --light: hsl(220, 16%, 96%);
-  --white: #fff;
+  /* Primary */
+  --blue-950: hsl(233, 26%, 24%);
+  --green-500: hsl(136, 64%, 51%);
+  --cyan-400: hsl(192, 69%, 51%);
+
+  /* Neutral */
+  --gray-600: hsl(233, 8%, 62%);
+  --gray-100: hsl(220, 16%, 96%);
+  --gray-50: hsl(0, 0%, 98%);
+  --white: hsl(0, 100%, 100%);
 }
 
 * {
@@ -17,37 +19,33 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: var(--light);
-  color: var(--dark);
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px; /* Style guide requirement */
+  background: var(--gray-50);
+  color: var(--blue-950);
   line-height: 1.5;
 }
 
-/* ------------------------------
-   LAYOUT CONTAINER
---------------------------------*/
+/* Layout*/
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ------------------------------
-   BUTTON
---------------------------------*/
+/* Button*/
 .btn {
-  background: linear-gradient(to right, var(--green), var(--cyan));
+  background: linear-gradient(to right, var(--green-500), var(--cyan-400));
   border: none;
-  padding: 10px 25px;
+  padding: 12px 28px;
   color: var(--white);
   border-radius: 25px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 700;
 }
 
-/* ------------------------------
-   HEADER / NAVIGATION
---------------------------------*/
+/* Header and Nav*/
 .header {
   background: var(--white);
   padding: 20px 0;
@@ -68,11 +66,12 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--gray);
-  font-size: 14px;
+  color: var(--gray-600);
+  font-weight: 400;
+  font-size: 16px;
 }
 
-/* Mobile toggle */
+
 #menu-toggle {
   display: none;
 }
@@ -82,9 +81,7 @@ body {
   cursor: pointer;
 }
 
-/* ------------------------------
-   HERO SECTION
---------------------------------*/
+/*Hero*/
 .hero {
   padding: 60px 0;
   background: url("images/bg-intro-desktop.svg") no-repeat right top;
@@ -100,13 +97,15 @@ body {
 
 .hero-text h1 {
   font-size: 42px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   margin-bottom: 25px;
-  color: var(--gray);
-  max-width: 400px;
+  color: var(--gray-600);
+  max-width: 420px;
+  font-weight: 300;
 }
 
 .hero-img img {
@@ -114,22 +113,23 @@ body {
   max-width: 450px;
 }
 
-/* ------------------------------
-   FEATURES SECTION
---------------------------------*/
+/* Features*/
 .features {
   padding: 60px 0;
+  background: var(--gray-100);
 }
 
 .features h2 {
   font-size: 32px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .features .sub {
-  color: var(--gray);
+  color: var(--gray-600);
   max-width: 500px;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 
 .feature-grid {
@@ -144,13 +144,23 @@ body {
 
 .feature h3 {
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
-/* ------------------------------
-   ARTICLES SECTION
---------------------------------*/
+.feature p {
+  color: var(--gray-600);
+  font-weight: 300;
+}
+
+/*Articles*/
 .articles {
   padding: 60px 0;
+}
+
+.articles h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .article-grid {
@@ -170,15 +180,24 @@ body {
 
 .author {
   font-size: 12px;
-  color: var(--gray);
+  color: var(--gray-600);
   margin-bottom: 5px;
+  font-weight: 300;
 }
 
-/* ------------------------------
-   FOOTER
---------------------------------*/
+.text h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: var(--gray-600);
+  font-weight: 300;
+}
+
+/* Footer*/
 .footer {
-  background: var(--dark);
+  background: var(--blue-950);
   color: var(--white);
   padding: 50px 0;
 }
@@ -193,6 +212,7 @@ body {
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .socials img {
@@ -203,12 +223,11 @@ body {
 .copy {
   margin-top: 15px;
   font-size: 12px;
-  color: var(--gray);
+  color: var(--gray-600);
+  font-weight: 300;
 }
 
-/* ------------------------------
-   MOBILE STYLES
---------------------------------*/
+/* Mobile*/
 @media (max-width: 700px) {
 
   /* Mobile nav */
