@@ -1,10 +1,9 @@
 # Digital-Banking-
 
 Overview
-This is my solution to the Easybank Landing Page challenge from Frontend Mentor. The goal was to build a clean, responsive landing page using only HTML and CSS. I focused on getting the layout, spacing, and general structure in place without over‑engineering anything.
+This is my solution to the Easybank Landing Page challenge from Frontend Mentor. The goal was to build a clean, responsive landing page using only HTML and CSS. I focused on getting the layout, spacing, and general structure in place.
 
 What I Built
-A responsive navigation bar
 
 A hero section with text and mockup images
 
@@ -14,7 +13,7 @@ A latest articles section
 
 A footer with social icons and links
 
-Everything is styled with basic Flexbox and Grid. I kept the CSS readable and straightforward so the project is easy to review and understand.
+Everything is styled with basic Flexbox and Grid.
 
 Tools Used
 HTML5
