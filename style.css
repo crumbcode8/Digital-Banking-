@@ -291,7 +291,7 @@ body {
   .hero {
     background: url("images/bg-intro-mobile.svg") no-repeat top center;
     background-size: 350px;
-    padding-top: 260px; /* pushes text below the image */
+    padding-top: 360px; /* pushes text below the image */
     padding-bottom: 40px;
   }
 
